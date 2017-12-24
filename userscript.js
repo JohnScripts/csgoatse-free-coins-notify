@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Csgoatse Free Coins Notify
 // @namespace    https://github.com/JohnScripts
-// @version      1.0
+// @version      1.1
 // @description  Notify Free Coins on CSGOatse
 // @author       John Scripts
 // @match        https://csgoatse.com/*
@@ -15,7 +15,7 @@
 
     var checkExist = setInterval(function() {
         if ($('.free-coins-switcher').text().indexOf('Collect') > -1) {
-            alert("MORE COINS!");
+            alert("FREE COINS!");
             clearInterval(checkExist);
         }
     }, 250);
