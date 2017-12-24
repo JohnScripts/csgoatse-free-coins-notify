@@ -1,0 +1,1 @@
+# csgoatse-coins-notify
