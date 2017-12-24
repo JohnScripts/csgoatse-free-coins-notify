@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Csgoatse Free Coins Notify
 // @namespace    https://github.com/JohnScripts
-// @version      0.2
+// @version      1.0
 // @description  Notify Free Coins on CSGOatse
 // @author       John Scripts
 // @match        https://csgoatse.com/*
