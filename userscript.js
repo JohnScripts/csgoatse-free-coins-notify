@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name         Csgoatse Coins Notify
-// @namespace    http://tampermonkey.net/
+// @name         Csgoatse Free Coins Notify
+// @namespace    https://github.com/JohnScripts
 // @version      0.1
-// @description  Script to notify Free Coins on CSGOatse
+// @description  Notify Free Coins on CSGOatse
 // @author       John Scripts
 // @match        https://csgoatse.com/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/JohnScripts/csgoatse-free-coins-notify/master/userscript.js
+// @downloadURL  https://raw.githubusercontent.com/JohnScripts/csgoatse-free-coins-notify/master/userscript.js
 // ==/UserScript==
 
 (function() {
