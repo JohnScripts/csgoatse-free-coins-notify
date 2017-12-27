@@ -13,10 +13,39 @@
 (function() {
     'use strict';
 
-    var checkExist = setInterval(function() {
+    // Create Notification Sound
+
+    var player = document.createElement('audio');
+    player.src = 'https://instaud.io/_/1A5M.mp3';
+    player.preload = 'auto';
+
+    //The checker
+
+    function startChecker(){
+        var checkExist = setInterval(function() {
         if ($('.free-coins-switcher').text().indexOf('Collect') > -1) {
-            alert("FREE COINS!");
-            clearInterval(checkExist);
+            player.play();
+            setTimeout(function() {
+                alert("FREE COINS!");
+                clearInterval(checkExist);
+                startStandby();
+            }, 150);
         }
-    }, 250);
+        }, 500);
+    }
+
+    //The Standby
+
+    function startStandby(){
+        var checkStandby = setInterval(function() {
+        if ($('.free-coins-switcher').text().indexOf('Collect') > -1) {
+            //nothing
+        }else{
+            //this means that if you collect coins, it will activate the notifier again.
+            clearInterval(checkStandby);
+            startChecker();
+        }
+        }, 500);
+    }
+    startChecker();
 })();
