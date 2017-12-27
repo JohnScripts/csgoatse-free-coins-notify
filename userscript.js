@@ -39,9 +39,9 @@
     function startStandby(){
         var checkStandby = setInterval(function() {
         if ($('.free-coins-switcher').text().indexOf('Collect') > -1) {
-            //nothing
+            //nothing happens here
         }else{
-            //this means that if you collect coins, it will activate the notifier again.
+            //this means that if you collect coins, it will activate the notifier again
             clearInterval(checkStandby);
             startChecker();
         }
